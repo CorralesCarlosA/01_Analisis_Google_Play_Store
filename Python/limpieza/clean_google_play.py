@@ -8,7 +8,7 @@ import numpy as np
 import os
 
 # 1) Cargar datos
-csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'DATA', 'googleplaystore.csv'))
+csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'DATA', 'googleplaystore.csv'))
 print('Ruta CSV:', csv_path)
 
 df = pd.read_csv(csv_path)
@@ -184,7 +184,7 @@ print('\nMuestra de datos limpios:')
 print(apps[['app','category','rating','reviews','size_bytes','installs','price','content_rating','content_rating_numeric','type','type_numeric','last_updated','android_ver','android_version_float']].head(10))
 
 # 18) Guardar output limpio para análisis futuro
-out_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'DATA', 'googleplaystore_cleaned.csv'))
+out_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'DATA', 'googleplaystore_cleaned.csv'))
 apps.to_csv(out_path, index=False)
 print('\nArchivo limpio guardado en:', out_path)
 
