@@ -3,7 +3,6 @@
 Este script replica el pipeline SQL en Python con pasos explicados
 para que puedas aprender y estudiar cada etapa.
 """
-
 import pandas as pd
 import numpy as np
 import os
