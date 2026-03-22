@@ -83,6 +83,7 @@ content_map = {
     '': 0,
 }
 apps['content_rating_normalized'] = apps['content_rating'].astype(str).str.strip().replace({'nan': ''})
+apps['content_rating_normalized'] = apps['content_rating'].astype(str).str.strip().replace({'nan': ''})
 apps['content_rating_numeric'] = apps['content_rating_normalized'].map(content_map).fillna(0).astype(int)
 
 # 11) Mapear type a numérico
